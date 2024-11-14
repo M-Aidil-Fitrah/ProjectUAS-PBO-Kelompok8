@@ -9,4 +9,12 @@ public class QRIS extends Pembayaran {
         super(id);
     }
 
+    // Metode override untuk memproses pembayaran khusus QRIS
+    @Override
+    public void prosesPembayaran() {
+        // Menampilkan pesan bahwa pembayaran melalui QRIS berhasil
+        System.out.println("Pembayaran via QRIS berhasil.");
+    }
+}
+
  
