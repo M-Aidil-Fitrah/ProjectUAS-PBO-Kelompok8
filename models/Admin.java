@@ -1,6 +1,4 @@
 package models;
-
-// Kelas Admin adalah subclass dari kelas Akun, yang mewakili akun dengan peran Admin
 public class Admin extends Akun {
        
     // Konstruktor kelas Admin, menerima id, username, dan password sebagai parameter
