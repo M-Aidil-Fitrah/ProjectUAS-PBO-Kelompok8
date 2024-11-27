@@ -2,3 +2,5 @@ admin,Q686,Nurul,tes1
 customer,J122,Nanda,tes2
 admin,N513,dill,2323
 customer,K398,dell,2323
+admin,N513,Ren, ren10
+customer,K398,Cut,cut10
