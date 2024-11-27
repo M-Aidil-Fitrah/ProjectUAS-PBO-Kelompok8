@@ -2,26 +2,26 @@ package payments;
 
 import java.util.Scanner;
 
-// Kelas abstrak yang menjadi dasar untuk berbagai metode pembayaran
+// Kelas abstrak dasar untuk metode pembayaran
 public abstract class Pembayaran {
-    protected int total; // Menyimpan total pembayaran yang harus dibayar
+    protected int total; // Total pembayaran
 
-    // Setter untuk mengatur total pembayaran
+    // Setter untuk total pembayaran
     public void setTotal(int total) {
         this.total = total;
     }
 
-    // Metode abstrak yang harus diimplementasikan oleh kelas turunan untuk memproses pembayaran
+    // Metode abstrak untuk memproses pembayaran
     public abstract String prosesPembayaran(Scanner scanner);
 
-    // Metode untuk memverifikasi apakah total pembayaran lebih dari 0
+    // Verifikasi apakah total pembayaran lebih dari 0
     public boolean verifikasiPembayaran() {
-        return total > 0; // Mengembalikan true jika total pembayaran valid (lebih dari 0)
+        return total > 0;
     }
 
-    // Metode toString untuk menampilkan deskripsi umum dari pembayaran
+    // Deskripsi umum pembayaran
     @Override
     public String toString() {
-        return "Pembayaran umum"; // Mengembalikan string yang menjelaskan bahwa ini adalah pembayaran umum
+        return "Pembayaran umum";
     }
 }
